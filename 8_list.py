@@ -1,14 +1,39 @@
-
 # 一組資料
+# 注意：Python無陣列
 # - 可變串列 List：有順序，可變動的資料集合 (使用中括弧)
 # - 固定串列 Tuple：有順序，不可變動的資料集合 (使用小括弧)
 # - 集合 Set：無順序的資料集合 (使用大括弧)
 # - 字典 Dictionary：kay-value 的集合，例如 {"apple":"蘋果"}
 
 
-# 串列 list (Python無陣列)
+# 串列 List
+score = [45, 93, 53, 63, 72, 88]
+score[0] = 23
+print(score)
+
+x1 = score[1:4]  # 不包含結尾
+print(x1)
+
+score[1:4] = []  # 直接更改 list 的資料 (此處為刪除部分的 list)
+print(score)
+
+score = score + [12, 33] # list 的串接
+print(score)
+
+print("================================")
+
+# 多維串列 (巢狀)
+data = [[1,2,3], [4,5,6]]
+print(data)
+print(data[0][0:2])
+
+print("================================")
+
+# 串列 List 的運算
 
 fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
+print(fruits)
+print(len(fruits))
 print(fruits.count('apple'))
 print(fruits.index('banana'))
 
@@ -23,53 +48,8 @@ print(fruits)
 
 print(len(fruits))
 
-
-# 範例：傳入一個串列，定義一個函式，傳回最大的前兩個數 (包含重覆)
-'''
-# 傳回最大的數
-def maxtwo(listdata):   
-    maxvalue = -99999  # 先指定成為一個最小小小的數
-    for i in range(0, len(listdata)):
-        if listdata[i] > maxvalue:
-            maxvalue = listdata[i]
-    return maxvalue, 0
-
-'''
-
-'''
-# 傳回最大的兩個數 (方法一)
-def maxtwo(listdata):   
-    max1 = -99999  # 先指定成為一個最小小小的數
-    max2 = -99999
-    for i in range(0, len(listdata)):
-        if listdata[i] > max1:
-            max2 = max1
-            max1 = listdata[i]
-        elif listdata[i] > max2:
-            max2 = listdata[i]
-        print(i, ", ", listdata[i], "===" , max1, ",", max2)
-            
-    return max1, max2
-'''
-
-'''
-# 傳回最大的兩個數 (方法二：用list函式排序)
-def maxtwo(listdata):   
-    listdata.sort()
-    listdata.reverse()
-    return listdata[0], listdata[1]
-'''
-
-def maxtwo(listdata):   
-    listdata.sort()
-    listdata.reverse()
-    return listdata[0], listdata[1]
-
-
-alist = [5, 2, 4, 1, 7, 9, 8, 6, 3]
-
-print("---------------------------")
-a1, a2 = maxtwo(alist)
-print("max two is ", a1, ", ", a2)
-
 # --------------------------------------
+
+# Tuple
+data = (4, 5, 2, 6)
+print(data)

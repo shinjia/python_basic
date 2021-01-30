@@ -1,10 +1,11 @@
 # 條件判斷句 (冒號，tab縮格)
+# Python 不支援 switch 語法
 
 import random
 
 a = random.randint(1,6)
-print("-----------------")
 print("a=", a)
+
 if a>=5:
     print("BIG")
     print("BIG")
@@ -21,7 +22,7 @@ else:
 # 布林值 True False
 a = 6
 b = 7
-if (a!=3 and b==7):
+if(a!=3 and b==7):
     print("ok")
 
 if(not False):

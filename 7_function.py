@@ -9,6 +9,15 @@ print("int...", x2)
 
 
 # 函式定義與呼叫
+def add(a, b):
+    result = a + b
+    return result
+
+print("--------------------")
+x1 = add(3, 7)
+print(x1)
+
+
 # 範例：計算從a加到b，用自定函式 (含預設值用法)
 def sumab(a, b=10):
     s = 0
@@ -16,7 +25,6 @@ def sumab(a, b=10):
         s = s + i
     return s
 
-
 print("--------------------")
-ans = sumab(1)
-print("sum=", ans)
+x1 = sumab(1)
+print(x1)
