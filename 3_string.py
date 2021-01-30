@@ -1,31 +1,6 @@
-# 資料型態與常數，變數
-#  - 數字：整數、長整數、浮點數
-#  - 字串 (單引號或雙引號)
-#  - 布林值 (True, False)
+# 字串型態與運算
 
-
-# 運算 + - * / % **，注意資料型態
-a = 7
-b = 3
-x1 = a + b
-x2 = a - b
-x3 = a * b
-x4 = a / b
-x5 = a // b  # 整數除法
-x6 = a % b   # 整數除法的餘數
-x7 = a ** b  # 次方
-x8 = pow(a, b)  # 使用函式 
-print(x1)
-print(x2)
-print(x3)
-print(x4)
-print(x5)
-print(x6)
-print(x7)
-print(x8)
-
-
-# 字串的表示
+# 字串的表示 (單引號或雙引號)
 x1 = "Hello"
 x2 = "Hell\"o"
 x3 = 'Hello'
@@ -42,6 +17,7 @@ Hello
 World
 可以寫多列文字
 '''  # 多列文字，注意此處頭尾都多加上換列
+
 print(x1)
 print(x2)
 print(x3)

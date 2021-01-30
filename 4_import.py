@@ -11,6 +11,7 @@ print("current time...", t)
 print(time.localtime(time.time()))
 print(time.localtime(time.time()).tm_year)
 
+
 import random
 print("random number ", random.random())
 print("random number ", math.floor(random.random()*10))  # 0...9
