@@ -1,6 +1,6 @@
 # 練習 Hello World，註解符號
 
-print ("Hello")
+print("Hello")
 
 """
 單行註解，井字號
@@ -8,35 +8,105 @@ print ("Hello")
 """
 
 
-# 常數，變數 (數字，字串)
+# 資料型態與常數，變數
+#  - 數字：整數、長整數、浮點數
+#  - 字串 (單引號或雙引號)
+#  - 布林值 (True, False)
 
-a = 7
-b = 3
+a = 3
+b = 7
 c = a * b
 print(a, "*",   b, "=", c)
-print (7%3)
+print(7%3)
 name = "Vincent "
 print("My name is ", name)
 
 
 # 運算 + - * / % **，注意資料型態
-print ("3*3....", 3**2)
-print (pow(4,2))
+a = 7
+b = 3
+x1 = a + b
+x2 = a - b
+x3 = a * b
+x4 = a / b
+x5 = a // b  # 整數除法
+x6 = a % b   # 整數除法的餘數
+x7 = a ** b  # 次方
+x8 = pow(a, b)  # 使用函式 
+print(x1)
+print(x2)
+print(x3)
+print(x4)
+print(x5)
+print(x6)
+print(x7)
+print(x8)
+
+
+# 字串的表示
+x1 = "Hello"
+x2 = "Hell\"o"
+x3 = 'Hello'
+x4 = 'Hell\'o'
+x5 = 'Hell"o'
+x6 = "Hello\nWorld"  # 換列
+x7 = """
+Hello
+World
+可以寫多列文字
+"""  # 多列文字，注意此處頭尾都多加上換列
+x8 = '''
+Hello
+World
+可以寫多列文字
+'''  # 多列文字，注意此處頭尾都多加上換列
+print(x1)
+print(x2)
+print(x3)
+print(x4)
+print(x5)
+print(x6)
+print(x7)
+print(x8)
+
+
+# 字串的運算
+x1 = "Hello" + "World"
+x2 = "Hello" "World"  # 使用空白也代表字串串接
+x3 = "Hello"*3  ## 重覆幾次
+x4 = "Hello"*3+"World"
+print(x1)
+print(x2)
+print(x3)
+print(x4)
+
+
+# 字串中字元的操作
+# 字串中每個字元都有編號索引，由 0 開始
+s = "HelloWorld"
+x1 = s[0]
+x2 = s[1:4]  # 開頭和結束 (包含開頭，不包含結尾)
+x3 = s[1:] 
+x4 = s[:4]  # 注意不包含結尾
+print(x1)
+print(x2)
+print(x3)
+print(x4)
 
 
 # 函式呼叫
 a = 10
 b = 3
-c = round(a/b, 2)
-d = int(c)
-print ("round...", c)
-print ("int...", d)
+x1 = round(a/b, 2)
+x2 = int(c)
+print("round...", x1)
+print("int...", x2)
 
 # import 特殊函式庫 (math, time, random)
 
 import math
 x = math.sqrt(5)
-print ("x=", x)
+print("x=", x)
 
 
 import time
@@ -135,6 +205,11 @@ ans = sumab(1)
 print("sum=", ans)
 
 
+# 一組資料
+# - 可變串列 List：有順序，可變動的資料集合 (使用中括弧)
+# - 固定串列 Tuple：有順序，不可變動的資料集合 (使用小括弧)
+# - 集合 Set：無順序的資料集合 (使用大括弧)
+# - 字典 Dictionary：kay-value 的集合，例如 {"apple":"蘋果"}
 
 # 串列 list (Python無陣列)
 
@@ -202,3 +277,6 @@ print("---------------------------")
 a1, a2 = maxtwo(alist)
 print("max two is ", a1, ", ", a2)
 
+
+
+# --------------------------------------
