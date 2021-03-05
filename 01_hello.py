@@ -14,3 +14,7 @@ print(a, "*",   b, "=", c)
 print(7%3)
 name = "Vincent "
 print("My name is ", name)
+
+# 同時可設定多個變數
+a, b = 3, 7
+print(a, "*",   b, "=", c)
