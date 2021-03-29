@@ -41,14 +41,15 @@ show("Hello", "World", "Python")
 
 
 # 範例：計算一些數字的平均
-def avg(*nums):
+def average(*nums):
+    cnt = len(nums) # 數量
     sum = 0
     for n in nums:
         sum += n
-    result = sum / len(nums)
-    return result
+    avg = sum / cnt
+    return avg
     
-x1 = avg(1, 2, 3, 4, 5)
-x2 = avg(3, 1, 2)
+x1 = average(1, 2, 3, 4, 5)
+x2 = average(3, 1, 2)
 print(x1)
 print(x2)
