@@ -1,7 +1,6 @@
 # ndarray 基礎運算功能
 # - 數字運算
 # - 逐元運算 (elementwise)
-# - 矩陣運算 (matrix)
 # - 統計運算 (statistics)
 
 import numpy as np
@@ -46,20 +45,6 @@ print("----------------------------------")
 # (2) 若是二維和一維的運算呢？
 # (3) 反之，若是一維和二維的運算呢？
 
-
-# 矩陣運算 (matrix)
-data1 = np.array([[2,1]])  # 1x2
-data2 = np.array([
-    [3, 2, 1], [3, 1, 4]
-])  # 2x3
-ary1 = data1.dot(data2)  # 內積 1x3
-ary2 = data1@data2  # 內積 1x3
-ary3 = np.outer(data1, data2)  # 外積 2x6
-
-print(ary1)
-print(ary2)
-print(ary3)
-print("----------------------------------")
 
 
 # 統計運算 (statistics) 單元運算
