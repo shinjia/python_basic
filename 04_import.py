@@ -46,3 +46,13 @@ print("random number ", math.floor(random.random()*10)+1)  # 1...10
 
 print("random number ", random.randint(1,6))
 print("random number ", random.randrange(1, 7))
+
+
+## 練習題：開發一個感知靈敏度遊戲 (心中默想五秒，看準不準)
+"""
+提示：
+(1) 按鍵後記錄 t1 的時間
+(2) 心中默念五秒鐘
+(3) 再按鍵後記錄 t2 的時間
+(4) 計算 t2-t1 即為兩個時間點的差
+"""

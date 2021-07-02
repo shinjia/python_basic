@@ -36,8 +36,12 @@ print(data.ravel())
 
 
 # 重塑資料形狀：改變資料的形狀，資料的總數量必須要一樣
-data = data2
+data = np.arange(0, 8)
 
+print(data)
+print(data.reshape(2, 4))
 print(data.reshape(4, 2))
+print(data.reshape(2,2,2))
 print(np.zeros(18).reshape(3,6))
 print(np.zeros(18).reshape(2,3,3))
+
